@@ -19,21 +19,21 @@ function formvalidation()
               }else if(emailid===""){
                 alert("Please Enter Email id");
                   var flags = false;
-                  // }else if(emailid!==""){
-                  //     result=validateEmail(emailid);
-                  //       if(result=== false){
-                  //           alert("Please Enter valid EmailId");
-                  //             var flags = false;
-                  //         }
-                  //         var flags=false;
+                   }else if(emailid!==""){
+                       result=validateEmail(emailid);
+                         if(result=== false){
+                             alert("Please Enter valid EmailId");
+                               var flags = false;
+                           }
+                           var flags=false;
 
                         }else if(address===""){
                                 alert("Please Enter Your Address");
                                   var flags = false;
-                                  // }else if(country===""){
-                                  //     alert("Please Enter Country and state");
-                                  //       var flags = false;
-                                  //
+                                   }else if(country===""){
+                                      alert("Please Enter Country and state");
+                                         var flags = false;
+
                                 }else{
                                             var flags = true;
                                           }
