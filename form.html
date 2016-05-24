@@ -1,0 +1,69 @@
+<html>
+<head>
+<script src="/home/rohit/Training/validationform/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://iamrohit.in/lab/js/location.js"></script>
+<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+  <div name="contactform" id="form" class="form">
+
+    <div>
+       <h3 style=" margin: auto;padding: 10px;align"> Contact form:</h3>
+    </div>
+
+        <div>
+           <span class="col1">First Name:</span>
+           <span class="col2"><Input type="text" name ="firstname" id="firstname"/></span>
+        </div>
+
+        <div>
+           <span class="col1">Last Name:</span>
+           <span class="col2"><Input type="text" name ="lastname" id="lastname"/></span>
+        </div>
+
+        <div>
+           <span class="col1">Mobile No:</span>
+           <span class="col2"><Input type="text" name ="mobileno" id="mobile" onblur="Mobilenovalidation()"/></span>
+        </div>
+
+        <div>
+           <span class="col1">Email Id:</span>
+           <span class="col2"><Input type="text" name ="emailid" id="emailid"/></span>
+        </div>
+
+        <div>
+           <span class="col1">Address:</span>
+           <span class="col2"><Input type="text" name ="address" id="address"/></span>
+        </div>
+
+        <div>
+           <span class="col1">Select Country:</span>
+          <span><select name="country" class="countries" id="countryId">
+              <option value="">Select Country</option>
+            </select></span>
+        </div>
+        <div>
+            <span class="col1">Select State:</span>
+          <span><select name="state" class="states" id="stateId">
+              <option value="">Select State</option>
+            </select></span>
+        </div>
+        <div>
+              <span class="col1">Select City:</span>
+              <span><select name="city" class="cities" id="cityId">
+              <option value="">Select City</option>
+         </select></span>
+      </div>
+
+        <div>
+           <!-- <span class="col1">Submit:</span> -->
+           <span><Input type="submit" name ="submit" id="submit" class="col3" onclick="ContactDetails()"/></span>
+        </div>
+
+        <div>
+         <div id="display" class="Result"></div>
+        </div>
+</div>
+</body>
+</html>
